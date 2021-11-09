@@ -13,7 +13,7 @@ pragma solidity ^0.8.0;
 contract ERC721{
 
 
-    event transfer(
+    event Transfer(
         address from, 
         address to, 
         uint256 tokenId);
@@ -30,6 +30,18 @@ contract ERC721{
         return owner != address(0);
     }
 
+    function balanceOf(address _owner) public view returns(uint256){
+        require(_owner != address(0), "owner query for non-exetent tokens");
+
+        return _OwnedTokensCount[_owner];
+    }
+
+    function ownerOf(uint256 _tokenId) external view returns(address){
+        address owner = _tokenOwner[_tokenId];
+        require(owner != address(0), "owner query for non-exetent tokens");
+        return owner;
+    }
+
     function _mint(address to, uint256 tokenId) internal{
         //requires that the address isn't zero
         require(to != address(0), "ERC721: minting to the zero address");
@@ -37,6 +49,6 @@ contract ERC721{
         _tokenOwner[tokenId] = to;
         _OwnedTokensCount[to] += 1;
 
-        emit Transfer(address(0), to, tokenId)
+        emit Transfer(address(0), to, tokenId);
     }
 }
