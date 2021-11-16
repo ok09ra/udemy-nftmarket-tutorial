@@ -23,7 +23,7 @@ class App extends Component {
         
         if(provider) {
             console.log('ethereum wallet is connected')
-            window.web3 = new Web3(provider)
+            window.web3 = new Web3( Web3.providers.HttpProvider('http://127.0.0.1:7545'))
         } else {
             // no ethereum provider
             console.log('no ethereum wallet detected')
@@ -60,7 +60,7 @@ class App extends Component {
             // set up an array to keep track of tokens 
             // load KryptoBirdz
             for(let i = 1; i <= totalSupply; i++) {
-                const KryptoBird = await contract.methods.kryptoBirdz(i - 1).call()
+                const KryptoBird = await contract.methods.KryptoBirdz(i - 1).call()
                 // how should we handle the state on the front end? 
                 this.setState({
                     kryptoBirdz:[...this.state.kryptoBirdz, KryptoBird]
@@ -128,7 +128,7 @@ class App extends Component {
                                     KryptoBirdz - NFT Marketplace</h1>
                             <form onSubmit={(event)=>{
                                 event.preventDefault()
-                                const kryptoBird = this.kryptoBird.value
+                                const kryptoBird = this.KryptoBird.value
                                 this.mint(kryptoBird)
                             }}>
                                 <input

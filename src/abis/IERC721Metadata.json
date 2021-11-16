@@ -42,15 +42,15 @@
     "absolutePath": "project:/src/contracts/interfaces/iERC721Metadata.sol",
     "exportedSymbols": {
       "IERC721Metadata": [
-        822
+        848
       ]
     },
-    "id": 823,
+    "id": 849,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 809,
+        "id": 835,
         "literals": [
           "solidity",
           "^",
@@ -67,9 +67,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 822,
+        "id": 848,
         "linearizedBaseContracts": [
-          822
+          848
         ],
         "name": "IERC721Metadata",
         "nameLocation": "70:15:10",
@@ -77,13 +77,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 810,
+              "id": 836,
               "nodeType": "StructuredDocumentation",
               "src": "92:72:10",
               "text": "@notice A descriptive name for a collection of NFTs in this contract"
             },
             "functionSelector": "06fdde03",
-            "id": 815,
+            "id": 841,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -91,23 +91,23 @@
             "nameLocation": "179:4:10",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 811,
+              "id": 837,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "183:2:10"
             },
             "returnParameters": {
-              "id": 814,
+              "id": 840,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 813,
+                  "id": 839,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "223:5:10",
                   "nodeType": "VariableDeclaration",
-                  "scope": 815,
+                  "scope": 841,
                   "src": "209:19:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -116,7 +116,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 812,
+                    "id": 838,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "209:6:10",
@@ -130,7 +130,7 @@
               ],
               "src": "208:21:10"
             },
-            "scope": 822,
+            "scope": 848,
             "src": "170:60:10",
             "stateMutability": "view",
             "virtual": false,
@@ -138,13 +138,13 @@
           },
           {
             "documentation": {
-              "id": 816,
+              "id": 842,
               "nodeType": "StructuredDocumentation",
               "src": "238:57:10",
               "text": "@notice An abbreviated name for NFTs in this contract"
             },
             "functionSelector": "95d89b41",
-            "id": 821,
+            "id": 847,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -152,23 +152,23 @@
             "nameLocation": "310:6:10",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 817,
+              "id": 843,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "316:2:10"
             },
             "returnParameters": {
-              "id": 820,
+              "id": 846,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 819,
+                  "id": 845,
                   "mutability": "mutable",
                   "name": "_symbol",
                   "nameLocation": "356:7:10",
                   "nodeType": "VariableDeclaration",
-                  "scope": 821,
+                  "scope": 847,
                   "src": "342:21:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -177,7 +177,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 818,
+                    "id": 844,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "342:6:10",
@@ -191,14 +191,14 @@
               ],
               "src": "341:23:10"
             },
-            "scope": 822,
+            "scope": 848,
             "src": "301:64:10",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 823,
+        "scope": 849,
         "src": "60:663:10",
         "usedErrors": []
       }
@@ -209,15 +209,15 @@
     "absolutePath": "project:/src/contracts/interfaces/iERC721Metadata.sol",
     "exportedSymbols": {
       "IERC721Metadata": [
-        822
+        848
       ]
     },
-    "id": 823,
+    "id": 849,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 809,
+        "id": 835,
         "literals": [
           "solidity",
           "^",
@@ -234,9 +234,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 822,
+        "id": 848,
         "linearizedBaseContracts": [
-          822
+          848
         ],
         "name": "IERC721Metadata",
         "nameLocation": "70:15:10",
@@ -244,13 +244,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 810,
+              "id": 836,
               "nodeType": "StructuredDocumentation",
               "src": "92:72:10",
               "text": "@notice A descriptive name for a collection of NFTs in this contract"
             },
             "functionSelector": "06fdde03",
-            "id": 815,
+            "id": 841,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -258,23 +258,23 @@
             "nameLocation": "179:4:10",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 811,
+              "id": 837,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "183:2:10"
             },
             "returnParameters": {
-              "id": 814,
+              "id": 840,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 813,
+                  "id": 839,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "223:5:10",
                   "nodeType": "VariableDeclaration",
-                  "scope": 815,
+                  "scope": 841,
                   "src": "209:19:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -283,7 +283,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 812,
+                    "id": 838,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "209:6:10",
@@ -297,7 +297,7 @@
               ],
               "src": "208:21:10"
             },
-            "scope": 822,
+            "scope": 848,
             "src": "170:60:10",
             "stateMutability": "view",
             "virtual": false,
@@ -305,13 +305,13 @@
           },
           {
             "documentation": {
-              "id": 816,
+              "id": 842,
               "nodeType": "StructuredDocumentation",
               "src": "238:57:10",
               "text": "@notice An abbreviated name for NFTs in this contract"
             },
             "functionSelector": "95d89b41",
-            "id": 821,
+            "id": 847,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -319,23 +319,23 @@
             "nameLocation": "310:6:10",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 817,
+              "id": 843,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "316:2:10"
             },
             "returnParameters": {
-              "id": 820,
+              "id": 846,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 819,
+                  "id": 845,
                   "mutability": "mutable",
                   "name": "_symbol",
                   "nameLocation": "356:7:10",
                   "nodeType": "VariableDeclaration",
-                  "scope": 821,
+                  "scope": 847,
                   "src": "342:21:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -344,7 +344,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 818,
+                    "id": 844,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "342:6:10",
@@ -358,14 +358,14 @@
               ],
               "src": "341:23:10"
             },
-            "scope": 822,
+            "scope": 848,
             "src": "301:64:10",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 823,
+        "scope": 849,
         "src": "60:663:10",
         "usedErrors": []
       }
@@ -378,7 +378,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-16T01:05:56.486Z",
+  "updatedAt": "2021-11-16T03:54:44.105Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
