@@ -15,6 +15,7 @@ class App extends Component {
     // first up is to detect ethereum provider
     async loadWeb3() {
         const provider = await detectEthereumProvider();
+        console.log(provider)
 
         // modern browsers
         // if there is a provider then lets
@@ -23,7 +24,7 @@ class App extends Component {
         
         if(provider) {
             console.log('ethereum wallet is connected')
-            window.web3 = new Web3( Web3.providers.HttpProvider('http://127.0.0.1:7545'))
+            window.web3 = new Web3(provider)
         } else {
             // no ethereum provider
             console.log('no ethereum wallet detected')
@@ -32,7 +33,7 @@ class App extends Component {
 
     async loadBlockchainData() {
         const web3 = window.web3
-        const accounts = await web3.eth.getAccounts()
+        const accounts = await web3.eth.requestAccounts()
         this.setState({account:accounts[0]})
 
         // create a constant js variable networkId which 
@@ -105,7 +106,7 @@ class App extends Component {
                 bg-dark flex-md-nowrap p-0 shadow'>
                 <div className='navbar-brand col-sm-3 col-md-3 
                 mr-0' style={{color:'white'}}>
-                      Krypto Birdz NFTs (Non Fungible Tokens)
+                      Taiyaki NFTs (Non Fungible Tokens)
                 </div>
                 <ul className='navbar-nav px-3'>
                 <li className='nav-item text-nowrap
@@ -125,7 +126,7 @@ class App extends Component {
                             <div className='content mr-auto ml-auto'
                             style={{opacity:'0.8'}}>
                                 <h1 style={{color:'black'}}>
-                                    KryptoBirdz - NFT Marketplace</h1>
+                                    Taiyaki - NFT Marketplace</h1>
                             <form onSubmit={(event)=>{
                                 event.preventDefault()
                                 const kryptoBird = this.kryptoBird.value
@@ -155,8 +156,8 @@ class App extends Component {
                                             <MDBCard className='token img' style={{maxWidth:'22rem'}}>
                                             <MDBCardImage src={kryptoBird}  position='top' height='250rem' style={{marginRight:'4px'}} />
                                             <MDBCardBody>
-                                            <MDBCardTitle> KryptoBirdz </MDBCardTitle> 
-                                            <MDBCardText> The KryptoBirdz are 20 uniquely generated KBirdz from the cyberpunk cloud galaxy Mystopia! There is only one of each bird and each bird can be owned by a single person on the Ethereum blockchain. </MDBCardText>
+                                            <MDBCardTitle> たいやき</MDBCardTitle> 
+                                            <MDBCardText> おいしいたいやきはいかが？</MDBCardText>
                                             <MDBBtn href={kryptoBird}>Download</MDBBtn>
                                             </MDBCardBody>
                                             </MDBCard>
