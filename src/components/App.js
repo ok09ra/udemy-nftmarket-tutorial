@@ -128,7 +128,7 @@ class App extends Component {
                                     KryptoBirdz - NFT Marketplace</h1>
                             <form onSubmit={(event)=>{
                                 event.preventDefault()
-                                const kryptoBird = this.KryptoBird.value
+                                const kryptoBird = this.kryptoBird.value
                                 this.mint(kryptoBird)
                             }}>
                                 <input
